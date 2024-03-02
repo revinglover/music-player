@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Rubik, sans-serif;
+    font-size: 12pt;
+
+    background-color: grey;
+    min-height: 100vh;
+}
+
+.player-container {
+    height: 500px;
+    width: 400px;
+    background: bisque;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 50px;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    height: 4px;
+    width: 90%;
+}
+
+.progress {
+    background: #242323;
+    border-radius: 5px;
+    height: 100%;
+    width: 66%;
+}
+
+@media screen and (max-width: 376px) {
+    .player-container {
+        width: 95vw;
+    }
+
+    .img-container {
+        left: 29px;
+    }
+}
